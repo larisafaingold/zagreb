@@ -1,0 +1,15 @@
+{
+    "name": "zagreb",
+    "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu-22.04",
+    "features": {
+        "ghcr.io/devcontainers/features/docker-in-docker:2.10.2": {
+            "version": "24.0.9"
+        },
+        "ghcr.io/devcontainers-contrib/features/kind:1.0.14": {
+            "version": "v0.22.0"
+        },
+        "ghcr.io/devcontainers/features/kubectl-helm-minikube:1": {
+            "version": "1.29.3"
+        }
+    }
+}
