@@ -1,5 +1,5 @@
 {
-    "name": "zagreb",
+    "name": "larisafaingold/zagreb",
     "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu-22.04",
     "features": {
         "ghcr.io/devcontainers/features/docker-in-docker:2.10.2": {
@@ -9,7 +9,8 @@
             "version": "v0.22.0"
         },
         "ghcr.io/devcontainers/features/kubectl-helm-minikube:1": {
-            "version": "1.29.3"
+            "version": "1.29.3",
+            "helm": "3.14.4"
         }
     }
 }
