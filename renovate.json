@@ -33,6 +33,46 @@
       ],
       "depNameTemplate": "kubernetes-sigs/kind",
       "datasourceTemplate": "github-releases"
+    },
+    {
+      "customType": "regex",
+      "description": "Update docker references",
+      "fileMatch": ["^\\.devcontainer\\devcontainer.json$"],
+      "matchStrings": [
+        "\"version\": \"(?<currentValue>\\d+\\.\\d+\\.\\d+)\" // renovate: packageName=docker/cli\\n"
+      ],
+      "depNameTemplate": "docker/cli",
+      "datasourceTemplate": "github-tags"
+    },
+    {
+      "customType": "regex",
+      "description": "Update kind references",
+      "fileMatch": ["^\\.devcontainer\\devcontainer.json$"],
+      "matchStrings": [
+        "\"version\": \"(?<currentValue>v\\d+\\.\\d+\\.\\d+)\" // renovate: packageName=kubernetes-sigs/kind\\n"
+      ],
+      "depNameTemplate": "kubernetes-sigs/kind",
+      "datasourceTemplate": "github-releases"
+    },
+    {
+      "customType": "regex",
+      "description": "Update kubectl references",
+      "fileMatch": ["^\\.devcontainer\\devcontainer.json$"],
+      "matchStrings": [
+        "\"version\": \"(?<currentValue>\\d+\\.\\d+\\.\\d+)\" // renovate: packageName=kubernetes/kubectl\\n"
+      ],
+      "depNameTemplate": "kubernetes/kubectl",
+      "datasourceTemplate": "github-releases"
+    },
+    {
+      "customType": "regex",
+      "description": "Update helm references",
+      "fileMatch": ["^\\.devcontainer\\devcontainer.json$"],
+      "matchStrings": [
+        "\"helm\": \"(?<currentValue>\\d+\\.\\d+\\.\\d+)\" // renovate: packageName=helm/helm\\n"
+      ],
+      "depNameTemplate": "helm/helm",
+      "datasourceTemplate": "github-tags"
     }
   ]
 }

@@ -3,14 +3,14 @@
     "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu-22.04",
     "features": {
         "ghcr.io/devcontainers/features/docker-in-docker:2.10.2": {
-            "version": "24.0.9"
+            "version": "24.0.9" // renovate: packageName=docker/cli
         },
         "ghcr.io/devcontainers-contrib/features/kind:1.0.14": {
-            "version": "v0.22.0"
+            "version": "v0.22.0" // renovate: packageName=kubernetes-sigs/kind
         },
         "ghcr.io/devcontainers/features/kubectl-helm-minikube:1.1.9": {
-            "version": "1.29.3",
-            "helm": "3.14.4"
+            "version": "1.29.3", // renovate: packageName=kubernetes/kubectl
+            "helm": "3.14.4" // renovate: packageName=helm/helm
         }
     }
 }
