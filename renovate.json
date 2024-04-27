@@ -16,12 +16,13 @@
     },
     {
       "customType": "regex",
-      "fileMatch": ["\\.yml$"],
-      "datasourceTemplate": "docker",
+      "description": "Update kindest kubernetes references",
+      "fileMatch": ["^\\.github\\/workflows\\/[^/]+\\.ya?ml$"],
       "matchStrings": [
-        "# renovate: datasource=(?<datasource>[a-z-.]+?) depName=(?<depName>[^\\s]+?)(?: (lookupName|packageName)=(?<packageName>[^\\s]+?))?(?: versioning=(?<versioning>[^\\s]+?))?(?: extractVersion=(?<extractVersion>[^\\s]+?))?(?: registryUrl=(?<registryUrl>[^\\s]+?))?\\s(?:ENV|ARG) .+?_VERSION[ =]\"?(?<currentValue>.+?)\"?\\s"
+        "kindest/node:v(?<currentValue>v\\d+\\.\\d+\\.\\d+) # renovate: kindest\\n"
       ],
-      "versioningTemplate": "docker"
+      "depNameTemplate": "kindest/node",
+      "datasourceTemplate": "docker"
     }
   ]
 }

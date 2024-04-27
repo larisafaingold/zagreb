@@ -20,7 +20,7 @@ jobs:
       - name: Create kind cluster
         uses: helm/kind-action@v1.10.0
         with:
-          node_image: kindest/node:v1.29.2 # renovate: datasource=docker depName=kindest packageName=kindest/node
+          node_image: kindest/node:v1.29.2 # renovate: kindest
           version: v0.22.0 # renovate: datasource=github-releases depName=kind packageName=kubernetes-sigs/kind
           cluster_name: kind
 
