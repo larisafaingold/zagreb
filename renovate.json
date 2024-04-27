@@ -19,10 +19,20 @@
       "description": "Update kindest kubernetes references",
       "fileMatch": ["^\\.github\\/workflows\\/[^/]+\\.ya?ml$"],
       "matchStrings": [
-        "kindest/node:(?<currentValue>v\\d+\\.\\d+\\.\\d+) # renovate: kindest"
+        "kindest/node:(?<currentValue>v\\d+\\.\\d+\\.\\d+) # renovate: packageName=kindest/node\\n"
       ],
       "depNameTemplate": "kindest/node",
       "datasourceTemplate": "docker"
+    },
+    {
+      "customType": "regex",
+      "description": "Update kind references",
+      "fileMatch": ["^\\.github\\/workflows\\/[^/]+\\.ya?ml$"],
+      "matchStrings": [
+        "version: (?<currentValue>v\\d+\\.\\d+\\.\\d+) # renovate: packageName=kubernetes-sigs/kind\\n"
+      ],
+      "depNameTemplate": "kubernetes-sigs/kind",
+      "datasourceTemplate": "github-releases"
     }
   ]
 }
