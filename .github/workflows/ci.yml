@@ -27,5 +27,7 @@ jobs:
         with:
           version: v3.10.1 # renovate: datasource=github-releases depName=chart-testing packageName=helm/chart-testing
 
-      - name: Run chart install
+      - name: Install
         run: make install
+        env:
+          RENOVATE_TOKEN: ${{ secrets.RENOVATE_TOKEN }}
