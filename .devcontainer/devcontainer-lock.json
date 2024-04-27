@@ -1,0 +1,19 @@
+{
+  "features": {
+    "ghcr.io/devcontainers-contrib/features/kind:1.0.14": {
+      "version": "1.0.14",
+      "resolved": "ghcr.io/devcontainers-contrib/features/kind@sha256:6880bd531414094304615159e5ec85a075047dc99f3d81f24e755bc3e9e4b996",
+      "integrity": "sha256:6880bd531414094304615159e5ec85a075047dc99f3d81f24e755bc3e9e4b996"
+    },
+    "ghcr.io/devcontainers/features/docker-in-docker:2.10.1": {
+      "version": "2.10.1",
+      "resolved": "ghcr.io/devcontainers/features/docker-in-docker@sha256:440bdb81cf8af43f3e922450d33db9775c1097340557a5b7b6fe705bc758c5ef",
+      "integrity": "sha256:440bdb81cf8af43f3e922450d33db9775c1097340557a5b7b6fe705bc758c5ef"
+    },
+    "ghcr.io/devcontainers/features/kubectl-helm-minikube:1.1.9": {
+      "version": "1.1.9",
+      "resolved": "ghcr.io/devcontainers/features/kubectl-helm-minikube@sha256:49427269a573943683c076b896f62f7a4107b3cfe6b814dbe2fa8bf1c4cc9c22",
+      "integrity": "sha256:49427269a573943683c076b896f62f7a4107b3cfe6b814dbe2fa8bf1c4cc9c22"
+    }
+  }
+}
