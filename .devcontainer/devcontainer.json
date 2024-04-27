@@ -2,7 +2,7 @@
     "name": "larisafaingold/zagreb",
     "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu-22.04",
     "features": {
-        "ghcr.io/devcontainers/features/docker-in-docker:2.10.1": {
+        "ghcr.io/devcontainers/features/docker-in-docker:2.10.2": {
             "version": "24.0.9"
         },
         "ghcr.io/devcontainers-contrib/features/kind:1.0.14": {
