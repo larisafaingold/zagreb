@@ -13,16 +13,6 @@
       ],
       "depNameTemplate": "ghcr.io/renovatebot/renovate",
       "datasourceTemplate": "docker"
-    },
-    {
-      "customType": "regex",
-      "description": "Update kindest kubernetes references",
-      "fileMatch": ["^\\.github\\/workflows\\/[^/]+\\.ya?ml$"],
-      "matchStrings": [
-        " +- (?<currentValue>v\\d+\\.\\d+\\.\\d+) # renovate: kindest\\n"
-      ],
-      "depNameTemplate": "kindest/node",
-      "datasourceTemplate": "docker"
     }
   ]
 }
