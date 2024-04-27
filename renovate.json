@@ -19,7 +19,7 @@
       "description": "Update kindest kubernetes references",
       "fileMatch": ["^\\.github\\/workflows\\/[^/]+\\.ya?ml$"],
       "matchStrings": [
-        "kindest/node:(?<currentValue>v\\d+\\.\\d+\\.\\d+) # renovate: packageName=kindest/node\\n"
+        "kindest/node:(?<currentValue>v.*?) # renovate: packageName=kindest/node\\n"
       ],
       "depNameTemplate": "kindest/node",
       "datasourceTemplate": "docker"
@@ -29,7 +29,7 @@
       "description": "Update kind references",
       "fileMatch": ["^\\.github\\/workflows\\/[^/]+\\.ya?ml$"],
       "matchStrings": [
-        "version: (?<currentValue>v\\d+\\.\\d+\\.\\d+) # renovate: packageName=kubernetes-sigs/kind\\n"
+        "version: (?<currentValue>v.*?) # renovate: packageName=kubernetes-sigs/kind\\n"
       ],
       "depNameTemplate": "kubernetes-sigs/kind",
       "datasourceTemplate": "github-releases"
@@ -39,7 +39,7 @@
       "description": "Update docker references",
       "fileMatch": ["^\\.devcontainer\\devcontainer.json$"],
       "matchStrings": [
-        "\"version\": \"(?<currentValue>\\d+\\.\\d+\\.\\d+)\" // renovate: packageName=docker/cli\\n"
+        "\"version\": \"(?<currentValue>.*?)\" // renovate: packageName=docker/cli\\n"
       ],
       "depNameTemplate": "docker/cli",
       "datasourceTemplate": "github-tags"
@@ -49,7 +49,7 @@
       "description": "Update kind references",
       "fileMatch": ["^\\.devcontainer\\devcontainer.json$"],
       "matchStrings": [
-        "\"version\": \"(?<currentValue>v\\d+\\.\\d+\\.\\d+)\" // renovate: packageName=kubernetes-sigs/kind\\n"
+        "\"version\": \"(?<currentValue>.*?)\" // renovate: packageName=kubernetes-sigs/kind\\n"
       ],
       "depNameTemplate": "kubernetes-sigs/kind",
       "datasourceTemplate": "github-releases"
@@ -59,7 +59,7 @@
       "description": "Update kubectl references",
       "fileMatch": ["^\\.devcontainer\\devcontainer.json$"],
       "matchStrings": [
-        "\"version\": \"(?<currentValue>\\d+\\.\\d+\\.\\d+)\" // renovate: packageName=kubernetes/kubectl\\n"
+        "\"version\": \"(?<currentValue>.*?)\" // renovate: packageName=kubernetes/kubectl\\n"
       ],
       "depNameTemplate": "kubernetes/kubectl",
       "datasourceTemplate": "github-releases"
@@ -69,7 +69,7 @@
       "description": "Update helm references",
       "fileMatch": ["^\\.devcontainer\\devcontainer.json$"],
       "matchStrings": [
-        "\"helm\": \"(?<currentValue>\\d+\\.\\d+\\.\\d+)\" // renovate: packageName=helm/helm\\n"
+        "\"helm\": \"(?<currentValue>.*?)\" // renovate: packageName=helm/helm\\n"
       ],
       "depNameTemplate": "helm/helm",
       "datasourceTemplate": "github-tags"
