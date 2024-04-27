@@ -3,7 +3,8 @@ name: CI
 on:
   push:
     branches: [ "main" ]
-
+  pull_requests:
+    branches: [ "main" ]
   workflow_dispatch:
 
 jobs:
@@ -24,9 +25,6 @@ jobs:
           cluster_name: kind
 
       - name: Install
-        run: |
-          kind get clusters
-          kubectl cluster-info
-          make install
+        run: make install
         env:
           RENOVATE_TOKEN: ${{ secrets.RENOVATE_TOKEN }}
