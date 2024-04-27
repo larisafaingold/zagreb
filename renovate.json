@@ -43,7 +43,7 @@
       ],
       "depNameTemplate": "docker/cli",
       "datasourceTemplate": "github-tags",
-      "extractVersion": "^v(?<version>.*)$"
+      "versioningTemplate": "^v(?<version>.*)$"
     },
     {
       "customType": "regex",
