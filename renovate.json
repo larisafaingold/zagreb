@@ -39,7 +39,7 @@
       "description": "Update docker references",
       "fileMatch": ["^\\.devcontainer\\devcontainer.json$"],
       "matchStrings": [
-        "\"version\": \"(?<currentValue>.*?)\" // renovate: packageName=docker/cli\\n"
+        "\"version\": \"(?<currentValue>.*?)\" // renovate: packageName=docker/cli"
       ],
       "depNameTemplate": "docker/cli",
       "datasourceTemplate": "github-tags",
@@ -50,7 +50,7 @@
       "description": "Update kind references",
       "fileMatch": ["^\\.devcontainer\\devcontainer.json$"],
       "matchStrings": [
-        "\"version\": \"(?<currentValue>.*?)\" // renovate: packageName=kubernetes-sigs/kind\\n"
+        "\"version\": \"(?<currentValue>.*?)\" // renovate: packageName=kubernetes-sigs/kind"
       ],
       "depNameTemplate": "kubernetes-sigs/kind",
       "datasourceTemplate": "github-releases"
@@ -60,7 +60,7 @@
       "description": "Update kubectl references",
       "fileMatch": ["^\\.devcontainer\\devcontainer.json$"],
       "matchStrings": [
-        "\"version\": \"(?<currentValue>.*?)\" // renovate: packageName=kubernetes/kubectl\\n"
+        "\"version\": \"(?<currentValue>.*?)\" // renovate: packageName=kubernetes/kubectl"
       ],
       "depNameTemplate": "kubernetes/kubectl",
       "datasourceTemplate": "github-releases"
@@ -70,7 +70,7 @@
       "description": "Update helm references",
       "fileMatch": ["^\\.devcontainer\\devcontainer.json$"],
       "matchStrings": [
-        "\"helm\": \"(?<currentValue>.*?)\" // renovate: packageName=helm/helm\\n"
+        "\"helm\": \"(?<currentValue>.*?)\" // renovate: packageName=helm/helm"
       ],
       "depNameTemplate": "helm/helm",
       "datasourceTemplate": "github-tags"
