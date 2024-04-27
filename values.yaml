@@ -3,7 +3,7 @@ cronjob:
   schedule: '* * * * *'
 
 image:
-  tag: 37.291.0
+  tag: 37.326.0
 
 env:
   LOG_LEVEL: "debug"
