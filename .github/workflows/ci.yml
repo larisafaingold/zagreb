@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+
+  workflow_dispatch:
+
+jobs:
+  install-chart:
+    name: install-chart
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.1.4
+        with:
+          fetch-depth: 0
+
+      - name: Create kind cluster
+        uses: helm/kind-action@v1.10.0
+        with:
+          node_image: kindest/node:v1.29.2 # renovate: kindest
+          version: v0.22.0 # renovate: datasource=github-releases depName=kind packageName=kubernetes-sigs/kind
+
+      - name: Install chart-testing
+        uses: helm/chart-testing-action@v2.6.1
+        with:
+          version: v3.10.1 # renovate: datasource=github-releases depName=chart-testing packageName=helm/chart-testing
+
+      - name: Run chart install
+        run: ct install
