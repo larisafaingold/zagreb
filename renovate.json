@@ -9,7 +9,7 @@
       "description": "Update renovate docker image references",
       "fileMatch": ["values.yaml"],
       "matchStrings": [
-        "tag: '(?<currentValue>.*?)'\\s+"
+        "tag: (?<currentValue>.*?)\\s+"
       ],
       "depNameTemplate": "ghcr.io/renovatebot/renovate",
       "datasourceTemplate": "docker"
