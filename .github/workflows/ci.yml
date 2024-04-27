@@ -23,6 +23,9 @@ jobs:
           version: v0.22.0 # renovate: datasource=github-releases depName=kind packageName=kubernetes-sigs/kind
 
       - name: Install
-        run: make install
+        run: |
+          kubectl cluster-info
+          ls ${HOME}/.kube/config
+          make install
         env:
           RENOVATE_TOKEN: ${{ secrets.RENOVATE_TOKEN }}
