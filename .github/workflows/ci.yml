@@ -24,8 +24,8 @@ jobs:
 
       - name: Install
         run: |
+          kind get clusters
           kubectl cluster-info
-          ls ${HOME}/.kube/config
           make install
         env:
           RENOVATE_TOKEN: ${{ secrets.RENOVATE_TOKEN }}
