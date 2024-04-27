@@ -21,7 +21,6 @@ jobs:
         with:
           node_image: kindest/node:v1.29.2 # renovate: kindest
           version: v0.22.0 # renovate: datasource=github-releases depName=kind packageName=kubernetes-sigs/kind
-          config: ~/.kube/config
 
       - name: Install
         run: make install
