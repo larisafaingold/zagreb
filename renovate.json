@@ -70,7 +70,7 @@
       "description": "Update helm references",
       "fileMatch": [".devcontainer/devcontainer.json"],
       "matchStrings": [
-        "\\s*\"helm\":\\s*\"(?<currentValue>.*?)\""
+        "\\s*\"helm\":\\s*\"(?<currentValue>.*?)\" // renovate: packageName=helm/helm"
       ],
       "depNameTemplate": "helm/helm",
       "datasourceTemplate": "github-tags",
