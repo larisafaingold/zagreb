@@ -37,13 +37,13 @@
     {
       "customType": "regex",
       "description": "Update docker references",
-      "fileMatch": ["^\\.devcontainer\\devcontainer.json$"],
+      "fileMatch": [".devcontainer/devcontainer.json"],
       "matchStrings": [
         "\"version\": \"(?<currentValue>.*?)\" // renovate: packageName=docker/cli"
       ],
       "depNameTemplate": "docker/cli",
       "datasourceTemplate": "github-tags",
-      "versioningTemplate": "^v(?<version>.*)$"
+      "extractVersionTemplate": "^v?(?<version>.*)$"
     },
     {
       "customType": "regex",
