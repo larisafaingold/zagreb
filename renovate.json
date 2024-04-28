@@ -68,7 +68,7 @@
     {
       "customType": "regex",
       "description": "Update helm references",
-      "fileMatch": ["^\\.devcontainer\\devcontainer.json$"],
+      "fileMatch": [".devcontainer\\devcontainer.json"],
       "matchStrings": [
         "\\s*\"helm\":\\s*\"(?<currentValue>.*?)\""
       ],
