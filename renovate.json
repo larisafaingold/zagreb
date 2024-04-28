@@ -63,7 +63,8 @@
         "\"version\": \"(?<currentValue>.*?)\" // renovate: packageName=kubernetes/kubectl"
       ],
       "depNameTemplate": "kubernetes/kubectl",
-      "datasourceTemplate": "github-releases"
+      "datasourceTemplate": "github-tags",
+      "extractVersionTemplate": "^v?(?<version>.*)$"
     },
     {
       "customType": "regex",
