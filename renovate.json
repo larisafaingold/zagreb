@@ -58,7 +58,7 @@
     {
       "customType": "regex",
       "description": "Update kubectl references",
-      "fileMatch": ["^\\.devcontainer\\devcontainer.json$"],
+      "fileMatch": [".devcontainer/devcontainer.json"],
       "matchStrings": [
         "\"version\": \"(?<currentValue>.*?)\" // renovate: packageName=kubernetes/kubectl"
       ],
