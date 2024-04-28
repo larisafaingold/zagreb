@@ -73,7 +73,8 @@
         "\"helm\": \"(?<currentValue>.*?)\""
       ],
       "depNameTemplate": "helm/helm",
-      "datasourceTemplate": "github-tags"
+      "datasourceTemplate": "github-tags",
+      "versioningTemplate": "^v(?<version>.*)$"
     }
   ]
 }
