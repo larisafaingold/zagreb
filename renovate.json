@@ -7,7 +7,9 @@
     {
       "customType": "regex",
       "description": "Update renovate docker image references",
-      "fileMatch": ["values.yaml"],
+      "managerFilePatterns": [
+        "/values.yaml/"
+      ],
       "matchStrings": [
         "tag: (?<currentValue>.*?)\\s+"
       ],
@@ -17,7 +19,9 @@
     {
       "customType": "regex",
       "description": "Update kindest kubernetes references",
-      "fileMatch": ["^\\.github\\/workflows\\/[^/]+\\.ya?ml$"],
+      "managerFilePatterns": [
+        "/^\\.github\\/workflows\\/[^/]+\\.ya?ml$/"
+      ],
       "matchStrings": [
         "kindest/node:(?<currentValue>v.*?) # renovate: packageName=kindest/node\\n"
       ],
@@ -27,7 +31,9 @@
     {
       "customType": "regex",
       "description": "Update kind references",
-      "fileMatch": ["^\\.github\\/workflows\\/[^/]+\\.ya?ml$"],
+      "managerFilePatterns": [
+        "/^\\.github\\/workflows\\/[^/]+\\.ya?ml$/"
+      ],
       "matchStrings": [
         "version: (?<currentValue>v.*?) # renovate: packageName=kubernetes-sigs/kind\\n"
       ],
@@ -37,7 +43,9 @@
     {
       "customType": "regex",
       "description": "Update docker references",
-      "fileMatch": [".devcontainer/devcontainer.json"],
+      "managerFilePatterns": [
+        "/.devcontainer/devcontainer.json/"
+      ],
       "matchStrings": [
         "\"version\": \"(?<currentValue>.*?)\" // renovate: packageName=docker/cli"
       ],
@@ -48,7 +56,9 @@
     {
       "customType": "regex",
       "description": "Update kind references",
-      "fileMatch": [".devcontainer/devcontainer.json"],
+      "managerFilePatterns": [
+        "/.devcontainer/devcontainer.json/"
+      ],
       "matchStrings": [
         "\"version\": \"(?<currentValue>.*?)\" // renovate: packageName=kubernetes-sigs/kind"
       ],
@@ -58,7 +68,9 @@
     {
       "customType": "regex",
       "description": "Update kubectl references",
-      "fileMatch": [".devcontainer/devcontainer.json"],
+      "managerFilePatterns": [
+        "/.devcontainer/devcontainer.json/"
+      ],
       "matchStrings": [
         "\\s*\"version\":\\s*\"(?<currentValue>.*?)\", // renovate: packageName=kubernetes/kubectl"
       ],
@@ -69,7 +81,9 @@
     {
       "customType": "regex",
       "description": "Update helm references",
-      "fileMatch": [".devcontainer/devcontainer.json"],
+      "managerFilePatterns": [
+        "/.devcontainer/devcontainer.json/"
+      ],
       "matchStrings": [
         "\\s*\"helm\":\\s*\"(?<currentValue>.*?)\" // renovate: packageName=helm/helm"
       ],
